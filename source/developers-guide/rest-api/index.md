@@ -236,6 +236,14 @@ class ApiClient
 }
 ```
 
+### Please Note
+
+This example works only with http connections.
+If you want to use it with https - add:
+
+curl_setopt($this->cURL, CURLOPT_SSL_VERIFYPEER, false);
+
+
 ### Creating the API client
 To successfully use this client, we need to initialize it.
 When creating it, we give the client an API URL, an user name and the API key.
